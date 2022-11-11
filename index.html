@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Minha página de filmes</title>
+  </head>
+
+  <body>
+    <nav>
+      <header>Filmes&Streams</header>
+      <section class="nav-items">
+        <a href="#home">Home</a> <a href="#sobre">Sobre</a>
+        <a href="#form">Formulário</a>
+      </section>
+    </nav>
+    <section id="home">
+      <div class="container">
+        <div class="column-left">
+          <h1>Aplicativo</h1>
+          <p>
+            Entre em contato pelo formulário para demonstrar as suas
+            prenferencias para no futuro desenvolvermos aplicações de
+            excelência.
+          </p>
+          <a id="CTA-button" href="#form">Comece agora!</a>
+        </div>
+        <div class="column-right">
+          <iframe
+            title="img"
+            src="https://giphy.com/embed/2eKfq00HWfb91flICf"
+            width="480"
+            height="405"
+            frameborder="0"
+            class="giphy-embed"
+            allowfullscreen></iframe>
+          <p>
+            <a
+              title="img"
+              href="https://giphy.com/stickers/movie-cinema-watch-2eKfq00HWfb91flICf"></a>
+          </p>
+          <p>
+            <a
+              title="img"
+              href="https://giphy.com/stickers/movie-cinema-watch-2eKfq00HWfb91flICf"></a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="sobre">
+      <div class="container">
+        <div class="column-left">
+          <h2>O que buscamos?</h2>
+          <p id="info">
+            Olá eu sou o Diogo, tenho 26 anos, sou estudante, no momento estou
+            aprendendo sobre HTML, CSS e JavaScript. Já fui vendedor e gerente
+            em uma grande loja de varejo. Hoje busco uma realocação no mercado
+            como desenvolvedor frontend, me desfie ao modificar esse site, como
+            meu primeiro projeto desenvolvido em parceria com a techAcademy
+            Neste projeto buscamos compreender as suas preferências sobre filmes
+            preencha o formulário abaixo.
+          </p>
+        </div>
+        <div class="column-right">
+          <img src="./diogo.png" alt="autordiogo" width="400px" />
+        </div>
+      </div>
+    </section>
+    <form id="form" action="http://google.com">
+      <fieldset>
+        <h2>Formulário de Interesses</h2>
+        <label>
+          Digite seu nome:
+          <input
+            type="text"
+            name="userName"
+            size="40"
+            maxlength="40"
+            placeholder="Digite seu nome completo" />
+        </label>
+        <label>
+          Digite sua profissão:
+          <input
+            type="text"
+            name="userJob"
+            size="40"
+            maxlength="40"
+            placeholder="Digite sua profissão" />
+        </label>
+        <label for="sobreusuario">
+          Nos conte um pouquinho sobre você:
+          <textarea
+            name="userComment"
+            id="sobreusuario"
+            cols="30"
+            rows="4"
+            placeholder="Eu sou muito..."></textarea>
+        </label>
+        <label for="movie">
+          Qual gênero de filmes que você mais gosta?
+          <select name="moviePref" id="movie">
+            <option value="0">Eu gosto de..</option>
+            <option value="Comédia">Comédia</option>
+            <option value="Romance">Romance</option>
+            <option value="Drama">Drama</option>
+            <option value="Terror">Terror</option>
+            <option value="Ação">Ação</option>
+          </select>
+        </label>
+        <label>
+          Qual o turno que você mais assiste?
+          <label>
+            <input class="check" type="radio" name="turno" value="manha" />
+            Manhã
+          </label>
+          <label>
+            <input class="check" type="radio" name="turno" value="tarde" />
+            Tarde
+          </label>
+          <label>
+            <input class="check" type="radio" name="turno" value="noite" />
+            Noite
+          </label>
+        </label>
+        <label for="frequencia">
+          Com que frenquencia você assiste filmes?
+          <select name="rotina" id="frequencia">
+            <option value="placeholder">Eu vejo filme...</option>
+            <option value="sempre">Sempre</option>
+            <option value="muitas">Muitas vezes</option>
+            <option value="algumas">Algumas vezes</option>
+            <option value="poucas">Poucas vezes</option>
+            <option value="nunca">Nunca</option>
+          </select>
+        </label>
+        <label>
+          Quais as plataformas de streaming que você mais usa?
+          <label
+            ><input
+              type="checkbox"
+              name="netflix"
+              class="check"
+              value="netflix" />
+            Netflix
+          </label>
+          <label>
+            <input type="checkbox" name="disney" class="check" value="disney" />
+            Disney Plus
+          </label>
+          <label>
+            <input type="checkbox" name="star" class="check" value="star" />
+            Star Plus
+          </label>
+          <label>
+            <input type="checkbox" name="hbomax" class="check" value="hbomax" />
+            HBOmax
+          </label>
+          <label>
+            <input type="checkbox" name="prime" class="check" value="prime" />
+            Amazon Prime Video
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="paramount"
+              class="check"
+              value="paramount" />
+            Paramount Plus
+          </label>
+          <label>
+            <input type="checkbox" name="starz" class="check" value="starz" />
+            StarZ Plus
+          </label>
+          <label>
+            <input type="checkbox" name="huluu" class="check" value="huluu" />
+            Huluu
+          </label>
+          <label>
+            <input type="checkbox" name="apple" class="check" value="apple" />
+            Apple TV+
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="globoplay"
+              class="check"
+              value="globo" />
+            GloboPlay
+          </label>
+        </label>
+        <label for="sugestao">
+          Qual sua melhor memoria sobre um filme ?
+          <textarea
+            name="comentario"
+            id="sugestao"
+            cols="30"
+            rows="4"
+            placeholder="Eu lembro quando..."></textarea>
+        </label>
+        <input id="form-button" type="submit" value="ENVIAR" />
+      </fieldset>
+    </form>
+  </body>
+</html>
